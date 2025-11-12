@@ -10,7 +10,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import com.smart.app.domain.SumTwoNumUseCase
 import com.smart.app.ui.screen.Greeting
-import com.smart.app.ui.theme.NewAppTheme
+import com.smart.app.ui.theme.ComposeAppTheme
 
 class MainActivity : ComponentActivity() {
     val sumTwoNumUseCase = SumTwoNumUseCase()
@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            NewAppTheme {
+            ComposeAppTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
                         name = "Android",
